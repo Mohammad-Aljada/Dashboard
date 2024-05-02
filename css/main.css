@@ -53,7 +53,7 @@ h4 {
   gap: 20px;
 }
 .final h2 {
-  font-weight: 790;
+  font-weight: 700;
 }
 .final .finalContent {
   margin-right: 33%;
@@ -158,17 +158,43 @@ h3 {
 
 @media screen and (max-width: 1200px) {
   .final {
-    padding-top: 130px;
+    padding-top: 30px;
+    gap: 10px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  #anthso {
+    margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .final {
     width: 100%;
+    padding-top: 180px;
+    text-align: center;
   }
   .swiper-slide img {
-    width: 300px !important;
+    width: 200px !important;
     object-fit: cover;
     margin-right: 32%;
+  }
+
+  .final .finalContent {
+    margin-right: 0;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #anthso {
+    flex-direction: column;
+  }
+  .donAccount {
+    font-size: 12px;
   }
 }
