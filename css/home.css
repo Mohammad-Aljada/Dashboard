@@ -103,14 +103,20 @@ aside #centerSe ul li:hover {
   font-size: 14px;
 }
 
-#menui {
+#burgerIcone {
   display: none;
   margin-right: 10px;
 }
+.closeIcone {
+  display: none !important;
+}
 
 @media screen and (max-width: 767px) {
-  #menui {
+  #burgerIcone {
     display: block;
+  }
+  .closeIcone {
+    display: block !important;
   }
   body {
     flex-wrap: nowrap;

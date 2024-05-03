@@ -84,12 +84,18 @@ function opentap2(tabname, index) {
 }
 
 const sidebar = document.getElementById("sidebar");
-const menuIcon = document.getElementById("menui");
+const burgerIcone = document.getElementById("burgerIcone");
 const mainContent = document.querySelector("main");
+const closeIcone = document.getElementById("closeIcone");
 
-menuIcon.addEventListener("click", () => {
+burgerIcone.addEventListener("click", () => {
   sidebar.classList.toggle("show-sidebar");
   mainContent.classList.toggle("show-sidebar");
+});
+
+closeIcone.addEventListener("click", () => {
+  sidebar.classList.remove("show-sidebar");
+  mainContent.classList.remove("show-sidebar");
 });
 
 window.addEventListener("resize", () => {
